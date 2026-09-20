@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import Input from '../Input/Input'
-import Button from '../Button/Button'
-import './BookForm.css'
+import Input from './Input'
+import Button from './Button'
 
 export default function BookForm({ onAdd }) {
   const [draft, setDraft] = useState('')
