@@ -2,7 +2,7 @@ import { useState } from 'react'
 import ShelfScreen from './pages/ShelfScreen'
 import './App.css'
 
-export default function App() {
+const App = () => {
   const [books, setBooks] = useState([])
   const [showOnlyUnread, setShowOnlyUnread] = useState(false)
 
@@ -52,3 +52,4 @@ export default function App() {
     </div>
   )
 }
+export default App;

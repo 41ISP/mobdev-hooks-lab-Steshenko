@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Input from './Input'
 import Button from './Button'
 
-export default function BookForm({ onAdd }) {
+const BookForm = ({ onAdd }) => {
   const [draft, setDraft] = useState('')
 
   function handleAdd() {
@@ -28,3 +28,5 @@ export default function BookForm({ onAdd }) {
     </div>
   )
 }
+export default BookForm;
+

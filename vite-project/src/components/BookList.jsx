@@ -1,6 +1,6 @@
 import BookItem from './BookItem'
 
-export default function BookList({ books, onToggleRead, onDelete }) {
+const BookList = ({ books, onToggleRead, onDelete }) => {
   if (books.length === 0) {
     return <div className="empty-note">На полке пока пусто</div>
   }
@@ -18,3 +18,4 @@ export default function BookList({ books, onToggleRead, onDelete }) {
     </div>
   )
 }
+export default BookList;

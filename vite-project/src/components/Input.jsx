@@ -1,4 +1,4 @@
-export default function Input({ value, onChange, onKeyDown, placeholder }) {
+const Input = ({ value, onChange, onKeyDown, placeholder }) => {
   return (
     <input
       className="input"
@@ -9,3 +9,4 @@ export default function Input({ value, onChange, onKeyDown, placeholder }) {
     />
   )
 }
+export default Input;

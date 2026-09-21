@@ -1,4 +1,4 @@
-export default function Checkbox({ id, checked, onChange, children }) {
+const Checkbox = ({ id, checked, onChange, children }) => {
   return (
     <div className="filter-chip">
       <input type="checkbox" id={id} checked={checked} onChange={onChange} />
@@ -9,3 +9,5 @@ export default function Checkbox({ id, checked, onChange, children }) {
     </div>
   )
 }
+export default Checkbox;
+

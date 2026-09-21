@@ -2,14 +2,14 @@ import BookForm from '../components/BookForm'
 import BookList from '../components/BookList'
 import FilterChip from '../components/FilterChip'
 
-export default function ShelfScreen({
+const ShelfScreen = ({
   books,
   showOnlyUnread,
   onToggleFilter,
   onAdd,
   onToggleRead,
   onDelete,
-}) {
+}) => {
   const visibleBooks = showOnlyUnread
     ? books.filter((book) => !book.read)
     : books
@@ -33,3 +33,4 @@ export default function ShelfScreen({
     </section>
   )
 }
+export default ShelfScreen;
